@@ -1,6 +1,9 @@
 package ex1;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 public class ListaCarro {
 
@@ -30,8 +33,27 @@ public class ListaCarro {
 		}
 		
 		//-------exercicio 2------------
+		System.out.println("\nEXERCICIO 2");
+		List<String> lista = new ArrayList<>();
+		lista.add(car1.getNome());
+		lista.add(car2.getNome());
+		lista.add(car3.getNome());
+		lista.add(car4.getNome());
+		lista.add(car5.getNome());
+		Collections.sort(lista, Collections.reverseOrder());
+		System.out.println(lista);
 		
-		
+		//-------exercicio 2------------
+		System.out.println("\nEXERCICIO 3");
+		ArrayList<Carro> arrayCarros = new ArrayList<>();
+		arrayCarros.add(car1);
+		arrayCarros.add(car2);
+		arrayCarros.add(car3);
+		arrayCarros.add(car4);
+		arrayCarros.add(car5);
+		for (Carro c : arrayCarros) {
+			System.out.println(c);
+		}
 	}
 
 }

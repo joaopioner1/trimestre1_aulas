@@ -26,6 +26,6 @@ public class Carro {
 
 	@Override
 	public String toString() {
-		return "Carro [nome=" + nome + ", marca=" + marca + ", tipo=" + tipo + "]";
+		return "-Carro-" + "\nNome: "+nome+"\nMarca: "+marca+"\ntipo: "+tipo+"\n-------\n";
 	}
 }
